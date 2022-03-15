@@ -1,0 +1,254 @@
+.page3 {
+  background-color: rgb(249, 253, 249);
+  width: 648px;
+  position: fixed;
+  top: calc(50vh - 250px);
+  left: calc(50vw - 324px);
+  border-radius: 8px;
+  z-index: 3;
+  min-height: 470px;
+  box-shadow: 0 0 20px rgb(212, 209, 209);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.section1 {
+  background-color: rgb(71, 94, 37);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:flex-start;
+  color: #fff;
+  /* width: 300px; */
+  width: 15rem;
+  height:490px;
+}
+
+.detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.large {
+  color: rgb(217, 243, 217);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 29px;
+}
+
+.sub {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 12px 0px;
+}
+
+.color {
+  color: rgb(197, 224, 155);
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+
+.pink1 {
+  margin-right: 5px;
+}
+
+.bookmark {
+  background-color: rgb(214, 233, 214);
+  padding: 5px 15px;
+  position: absolute;
+  top: 49.4%;
+  left: 246px;
+  color: rgb(71, 94, 37);
+  cursor: pointer;
+}
+
+.cooki {
+  width: 15rem;
+  height: 12.1rem;
+}
+.section2 {
+  background-color: rgb(249, 253, 249);
+
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin: 20px 30px;
+  width: 40%;
+}
+.close2 {
+  position: absolute;
+  right: -4%;
+  top: -1%;
+  cursor: pointer;
+}
+.naming {
+  color: rgb(14, 73, 14);
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 35px;
+  margin-bottom: 2rem;
+  margin-top: 0.7rem;
+}
+
+.ingre {
+  font-size: 24px;
+  color: rgb(14, 73, 14);
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.step {
+  line-height: 22px;
+  color: rgb(84, 112, 84);
+  font-size: 17px;
+  font-weight: 500;
+  padding: 6px 0px;
+}
+.steps {
+  overflow-y: scroll;
+  height: 170px;
+}
+
+.direction {
+  text-decoration: none;
+  background-color: rgb(14, 73, 14);
+  padding: 13px 40px;
+  color: rgb(203, 243, 203);
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.directions {
+  margin-top: 25px;
+  position: relative;
+  text-align: left;
+}
+.arrow {
+  position: absolute;
+  right: 7%;
+  color: rgb(203, 243, 203);
+}
+
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: white;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgb(84, 112, 84);
+  border-radius: 20px;
+  border: 3px solid white;
+}
+
+@media (max-width: 693px) {
+  .page3 {
+    left: calc(50vw - 200px);
+    width: 10%;
+    top: 10px;
+    max-height: calc(100vh - 20px);
+    flex-direction: column;
+    overflow-y: scroll;
+  }
+  .section {
+    max-height: calc(100vh - 20px);
+    overflow-y: scroll;
+    flex-direction: column;
+    background-color: rgb(249, 253, 249);
+
+    position: fixed;
+    border-radius: 8px;
+    z-index: 3;
+    min-height: 470px;
+    padding: 20px 0px;
+    width: 400px;
+    overflow-x: hidden;
+  }
+
+  .section1 {
+    border-radius: 5px;
+    width: 72.4%;
+  }
+  .cooki{
+    width:14.1rem;
+    height: 11rem;
+    border-radius: 0px;
+
+  }
+  .section2 {
+    width: 100%;
+    margin: 0px 30px;
+    align-items: center;
+    padding-bottom: 20px;
+  }
+
+  .ingre {
+    margin-left: 50px;
+  }
+
+  .step {
+    margin-left: 50px;
+  }
+  .close2 {
+    right: 5%;
+    top: 1%;
+  }
+
+  .directions {
+    margin-left: 20px;
+  }
+  .large {
+    font-size: 17px;
+  }
+
+  .bookmark {
+    top: 43%;
+    left: 280px;
+  }
+  .naming {
+    text-align: center;
+  }
+}
+
+
+@media (max-width: 425px) {
+  .page3 {
+    left: calc(50vw - 150px);
+  }
+  .bookmark {
+    top: 40.9%;
+    left: 231px;
+  }
+  .section {
+    width: 300px;
+    padding-top: 0;
+  }
+  .section1 {
+    width: 282px;
+  }
+  .naming{
+    font-size: 25px;
+  }
+  .close2 {
+    right: 5%;
+    top: 1%;
+    color: white;
+    background-color: black;
+  }
+}

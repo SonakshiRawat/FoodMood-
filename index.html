@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="page2.css" />
+    <link rel="stylesheet" href="page3.css" />
+    <link rel="stylesheet" href="page4.css" />
+    <link rel="stylesheet" href="foot.css" />
+   
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>FoodMood</title>
+  </head>
+  <body>
+    <div class="page1  ">
+   <nav1>
+       <div class="logo">Food<span id="mood">Mood</span></div>
+  <ul>
+      <li  onclick="document.getElementById('login').style.display='flex'">Login</li>
+      <li  onclick="document.getElementById('signup').style.display='flex'">SignUp</li>
+  </ul>
+    </nav1>
+    <div class="main">
+        <div class="layer">
+            <div class="title">Let's Start Cooking With Popular Recipes</div>
+            <div class="small">Teaching you the best methodologies in cooking...<br>No need to worry!!</div>
+            <button class="start" onclick="document.getElementById('login').style.display='flex'">Get started</button>
+        </div>
+    </div>
+
+
+</div>
+
+<div id="login" class="modal animate">
+    <span onclick="document.getElementById('login').style.display='none'"
+  class="close" title="Close Modal">&times;</span>
+  <img src="image/login_img.jpg" class="login_img ">
+  <form class="modal-content ">
+      <div class="imgcontainer">
+        <img src="image/img_avatar2.png" alt="Avatar" class="avatar">
+      </div>
+  
+      <div class="container1">
+        <label for="uname"><b>Email</b></label>
+        <input type="text" class="nameLogin" placeholder="Enter Email" name="uname">
+  
+        <label for="psw"><b>Password</b></label>
+        <input type="password" class="login_pswd" placeholder="Enter Password" name="psw" >
+  <div class="account">Don't have an account?<span class="choice" onclick="document.getElementById('login').style.display='none',document.getElementById('signup').style.display='flex'">Sign up here</span> </div>
+        <button class="btn_login" type="submit">Login</button>
+
+      </div>
+  
+    </form>
+  </div>
+
+
+
+  <div id="signup" class="modal animate" >
+    
+    <span onclick="document.getElementById('signup').style.display='none'"
+  class="close" title="Close Modal">&times;</span>
+  <img src="image/login_img.jpg" class="login_img">
+  
+    <form class="modal-content ">
+      <div class="container1">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" class="user" placeholder="Enter Username" name="uname">
+  
+        <label for="uname"><b>Email</b></label>
+        <input type="text" class="nameSign" placeholder="Enter Email" name="uname">
+  
+        <label for="psw"><b>Password</b></label>
+        <input type="password" class="sign_pswd1" placeholder="Enter Password" name="psw" >
+ 
+        <label for="psw"><b>Confirm Password</b></label>
+        <input type="password" class="sign_pswd2" placeholder="Enter Password" name="psw" >
+        
+        <button class="btn_sign" type="submit">Signup</button>
+        
+      </div>
+  
+    </form>
+  </div>
+
+  <div class="check modal1">
+    <div class="success animate">
+
+    <img src="image/check.png"class=" chk_icon">
+    <div class="mssg">Congratulations,Your account has been successfully created</div>
+    <button class="continue" onclick="document.querySelector('.check').style.display='none',document.getElementById('login').style.display='flex'">Continue</button>
+    </div>
+  </div>
+</div>
+
+    <div class="page2 hidden">
+      <nav>
+        <div class="logo">Food<span id="mood">Mood</span></div>
+        <ul>
+          <li class="home"><a href="#home">Home</a></li>
+          <li class="nav2"><a href="#category">Category</a></li>
+          <li class="book"><a href="#book">Bookmark</a>
+          
+          </li>
+          <li class="show"><a href="#show">Your Recipe</a></li>
+        </ul>
+        <div class="ham">
+          <span class="material-icons" onclick="openNav()"> menu </span>
+        </div>
+      </nav>
+      <div class="greenLine">
+        <input class="search" placeholder="Search Recipes..." /><button
+          class="search_btn"
+        >
+          Search
+        </button>
+        <div class="help">
+          <span class="material-icons call">headset_mic</span>
+          <span class="num">Helpline:0987-654-321</span>
+        </div>
+      </div>
+      <div class="photo" id="home">
+        <div class="layer">
+          <div class="tag">Hey <span class="greet orange">Sonakshi</span></div>
+          <div class="orange">
+            Happy
+            <span style="color: white"
+              >Cooking!!! <br />Be the best chef as you can be</span
+            >
+          </div>
+          <div class="follow">
+            Learn how to make your favorite restaurant's dishes
+          </div>
+
+          <button class="btn_recipe">Add Recipes</button>
+        </div>
+      </div>
+     
+      <div class="extra1" id="category">
+        <div class="category" id="category">
+          <div class="text">
+            <div class="head">Recipe by Category</div>
+            <p>
+              We got the best chefs and instructors who makes cooking easy with
+              their amazing Recipes
+            </p>
+          </div>
+
+          <div class="pics">
+            <div class="subsection">
+              <div class="option">
+                <img src="image/cake.jpg" class="cake" />
+                <div class="layer1"></div>
+              </div>
+              <p>Cake</p>
+            </div>
+            <div class="subsection">
+              <div class="option">
+                <img src="image/chicken.jpg" class="cake" />
+                <div class="layer1"></div>
+              </div>
+              <p>Chicken</p>
+            </div>
+            <div class="subsection">
+              <div class="option">
+                <img src="image/tacos.jpg" class="cake" />
+                <div class="layer1"></div>
+              </div>
+              <p>tacos</p>
+            </div>
+            <div class="subsection">
+              <div class="option">
+                <img src="image/pasta.jpg" class="cake" />
+                <div class="layer1"></div>
+              </div>
+              <p>Pasta</p>
+            </div>
+            <div class="subsection">
+              <div class="option">
+                <img src="image/pizzas.jpg" class="cake" />
+                <div class="layer1"></div>
+              </div>
+              <p>Pizza</p>
+            </div>
+            <div class="subsection">
+              <div class="option">
+                <img src="image/seafood.jpg" class="cake" />
+                <div class="layer1"></div>
+              </div>
+              <p>Seafood</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="extra4" id="book">
+        <div class="favy hidden">
+          <div class="text">
+            <div class="head2">Your favorites</div>
+          </div>
+          <div class="fav"></div>
+        </div>
+      </div>
+      <div class="extra2 row1 hidden">
+        <div class="head3 ">Your Search Results</div>
+        <div class="row"></div>
+      </div>
+
+      <div class="extra3" id="show">
+        <div class="mycoll hidden">
+          <div class="head">Your Recipes</div>
+          <div class="personal"></div>
+        </div>
+      </div>
+      <div id="mySidenav" class="sidenav hidden">
+        <a href="javascript:void(0)" class="closybtn" onclick="closeNav()"
+          >&times;</a
+        >
+        <li class="home"><a href="#home">Home</a></li>
+        <li class="nav2"><a href="#category">Category</a></li>
+        <li class="book"> <a href="#book">Bookmark</a></li>
+         <li class="show"><a href="#show">Your Recipe</a></li>
+      </div>
+    </div>
+    <div class="page3"></div>
+    <div class="page4"></div>
+    <div class="foot hidden">
+      <div class="separate">
+        <div class="logo1">Food<span id="mood">Mood</span></div>
+    <div class="icons">
+      <img src="image/icon-facebook.svg"class="icon">
+      <img src="image/icon-youtube.svg"class="icon">
+      <img src="image/icon-twitter.svg"class="icon">
+      <img src="image/icon-pinterest.svg"class="icon">
+      <img src="image/icon-instagram.svg"class="icon">
+    </div>
+      </div>
+      <div class="separate">
+      <div class="col">About Us</div>
+      <div class="col">Contact</div>
+      <div class="col">Blog</div>
+    </div>
+    <div class="separate">
+      <div class="col">Careers</div>
+      <div class="col"> Support</div>
+      <div class="col">Privacy Policy</div>
+    </div>
+    <div class="separate">
+    <button class="btn btnFoot">Request Invite</button> 
+     <p> © <span class="logo1">Food<span id="mood">Mood</span></span>. All Rights Reserved</p>
+    </div></div>
+    <script src="extra.js"></script>
+  </body>
+</html>
