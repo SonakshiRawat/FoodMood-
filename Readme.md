@@ -24,11 +24,9 @@
   <li>CSS3 Custom Properties</li>
      <li>Vanilla javascript</li>
 </ul>
-
-
 <hr>
-<h3>Screenshots</h3>
-<img src="design/Capture.PNG" alt="Desktop version"/><br>
+<h3>Demo Video</h3>
+https://user-images.githubusercontent.com/85867447/159135023-b7535e47-7e7a-47ac-b47e-7b4913e3881e.mp4
 
 
 
