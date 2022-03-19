@@ -9,7 +9,7 @@
 <h3>Features</h3>
 <ul>
 <li>User have to sign up and can log into their account any time by adding email and password</li>
-<li>User can generate their own recipes</li>
+<li>User can create their own recipes</li>
 <li>User can search recipes using the name of dishes and ingredients and can view the detailed recipe on clicking it.</li>
 <li> User can add/remove items from their favorites</li>
 <li>See the hover states for all the interactive elements on the page</li>
